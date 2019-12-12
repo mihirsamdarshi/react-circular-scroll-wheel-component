@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+.circle {
+  position: absolute;
+  background-color: #000000;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.circleContainer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  margin-top: -1px;
+}
+
+.grabbableCircle {
+  cursor: default;
+  position: absolute;
+  right: -15px;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background: linear-gradient(180deg, #FFFFFF, #efefef);
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 10px 0;
+}
+
+.middleButton {
+  margin-top: 25%;
+  margin-left: 25%;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #ffffff;
+  border-radius: 50%;
+}

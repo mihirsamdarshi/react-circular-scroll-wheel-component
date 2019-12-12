@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Paper } from '@material-ui/core';
 
 import Playlists from "./Playlists";
-import ScrollWheel from "../../component/src/ScrollWheel";
+import ScrollWheel from "../component/ScrollWheel";
 import dataList from './data';
 import './App.css';
 
