@@ -8,7 +8,7 @@ const ScrollWheel = props => {
     const { onSlideMove, snapAngle=0 } = props;
 
     const [status, setStatus] = useState(STATE_IDLE);
-    const [actualAngle, setActualAngle] = useState(0);
+    const [actualAngle, setActualAngle] = useState(0); //eslint-disable-line
     const [displayAngle, setDisplayAngle] = useState(0);
 
     const elementPosition = useRef(null);

@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import {Paper} from '@material-ui/core';
+import {Grid, Paper} from '@material-ui/core';
 
 import Playlists from "./Playlists";
 import ScrollWheel from "./component/ScrollWheel";
+import useWindowDimensions from "./WindowDimensions";
+
 import dataList from './data';
 import './App.scss';
 
@@ -12,8 +14,11 @@ const App = () => {
     const [angle, setAngle] = useState(0);
     const [angleIncrement, setAngleIncrement] = useState(0);
 
-    const blackOverride = {
-        backgroundColor: '#EEE',
+    const {height, width} = useWindowDimensions();
+    const heightWidthStyle = {
+        height: height - 84,
+        width: width - 84,
+        marginTop: 50,
     };
 
     const selectPlaylist = () => {
@@ -25,18 +30,20 @@ const App = () => {
         setListLength(dataList.length);
         setAngleIncrement(Math.floor(360 / listLength));
         dataList.forEach(element => setPlaylistIds(playlistIds => [...playlistIds, element.id]));
-    }, []);
+    }, [listLength]);
 
     return (
         <div className="App">
             <Grid container className="gridContainer">
-                <Grid item xs={6}>
-                    <Paper className="paper playlistComponent" style={blackOverride}>
+                <Grid item xs={6} style={heightWidthStyle}>
+                    <Paper className='paper'>
                         <Playlists playlists={dataList} selected={selectPlaylist()}/>
                     </Paper>
                 </Grid>
-                <Grid item xs={6}>
-                    <ScrollWheel onSlideMove={setAngle} snapAngle={angleIncrement}/>
+                <Grid item xs={6} style={heightWidthStyle}>
+                    <div className="scrollContainer">
+                        <ScrollWheel onSlideMove={setAngle} snapAngle={angleIncrement}/>
+                    </div>
                 </Grid>
             </Grid>
         </div>

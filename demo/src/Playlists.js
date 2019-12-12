@@ -17,8 +17,8 @@ const PlaylistBox = (props) => {
     });
 
     return (
-        <Card className="card playlist" ref={scrollElement}>
-            <CardContent style={props.selected ? highlighted : null} className="details">
+        <Card className="card playlist" ref={scrollElement} style={props.selected ? highlighted : null}>
+            <CardContent className="details" style={props.selected ? highlighted : null}>
                 <Typography gutterBottom variant="h5" component="h2">
                     {props.name}
                 </Typography>

@@ -1,4 +1,19 @@
 .App {
-  background-color: #ffffff;
+  background-color: #ddd;
   height: 100vh;
+}
+
+.paper {
+  padding: 15px;
+  text-align: center;
+  overflow: auto;
+  height: 97%;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.scrollContainer {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
 }
