@@ -23,9 +23,6 @@ const PlaylistBox = (props) => {
                     <Typography gutterBottom variant="h5" component="h2">
                         {props.name}
                     </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                        {props.numTracks ? (`${props.numTracks} tracks available`) : 'No tracks available'}
-                    </Typography>
                 </CardContent>
             </CardActionArea>
         </Card>
@@ -33,7 +30,6 @@ const PlaylistBox = (props) => {
 };
 
 const Playlists = props => {
-
     const isSelected = (element) => {
         return props.selected === element.id;
     };
@@ -46,8 +42,6 @@ const Playlists = props => {
                         key={element.id}
                         playlistId={element.id}
                         name={element.name}
-                        numTracks={element.tracks.total}
-                        imgSrc={element.images[0]}
                         selected={isSelected(element)}
                     />
                 ))

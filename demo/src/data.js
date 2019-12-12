@@ -1,64 +1,17 @@
-export const dataList = [
+const dataList = [
     {
-        collaborative: false,
-        external_urls: {
-            spotify: 'https://open.spotify.com/playlist/4bof0ZfFsgSQ9A3519zfvC',
-        },
-        href: 'https://api.spotify.com/v1/playlists/4bof0ZfFsgSQ9A3519zfvC',
         id: '4bof0ZfFsgSQ9A3519zfvC',
         name: 'july_repeat_everything',
-        primary_color: null,
-        public: true,
-        snapshot_id: 'MTAsZmYwNTJlMDllN2VlY2RmNGVlNWU0NDBhYzIyY2RiMDdmZmEwMzY3YQ==',
-        tracks: {
-            href: 'https://api.spotify.com/v1/playlists/4bof0ZfFsgSQ9A3519zfvC/tracks',
-            total: 37,
-        },
-        type: 'playlist',
-        uri: 'spotify:playlist:4bof0ZfFsgSQ9A3519zfvC',
     },
     {
-        collaborative: false,
-        external_urls: {
-            spotify: 'https://open.spotify.com/playlist/03de8Phg9jBojkrhxQX9LE',
-        },
-        href: 'https://api.spotify.com/v1/playlists/03de8Phg9jBojkrhxQX9LE',
         id: '03de8Phg9jBojkrhxQX9LE',
         name: 'B&L Fresh Batch',
-        primary_color: null,
-        public: false,
-        snapshot_id: 'MTA0Niw5YjlkNGVlMGI2OTFmOWFmNWI5YTA1Njc0ZmI5ZGNmYjdiOWQ0MjNh',
-        tracks: {
-            href: 'https://api.spotify.com/v1/playlists/03de8Phg9jBojkrhxQX9LE/tracks',
-            total: 106,
-        },
-        type: 'playlist',
-        uri: 'spotify:playlist:03de8Phg9jBojkrhxQX9LE',
     },
     {
-        collaborative: false,
-        external_urls: {
-            spotify: 'https://open.spotify.com/playlist/7zt6XcebGDPj9weCyjbcSf',
-        },
-        href: 'https://api.spotify.com/v1/playlists/7zt6XcebGDPj9weCyjbcSf',
         id: '7zt6XcebGDPj9weCyjbcSf',
         name: 'new new new',
-        primary_color: null,
-        public: true,
-        snapshot_id: 'MzEsMTQyOGVjZTkzMDc3ZTFmM2JmMDc5MGNkMWFmZTFkNTMyZGI4NGE0NA==',
-        tracks: {
-            href: 'https://api.spotify.com/v1/playlists/7zt6XcebGDPj9weCyjbcSf/tracks',
-            total: 1768,
-        },
-        type: 'playlist',
-        uri: 'spotify:playlist:7zt6XcebGDPj9weCyjbcSf',
     },
     {
-        collaborative: false,
-        external_urls: {
-            spotify: 'https://open.spotify.com/playlist/3bdLrIgRSwO6q7x3cBDNkj',
-        },
-        href: 'https://api.spotify.com/v1/playlists/3bdLrIgRSwO6q7x3cBDNkj',
         id: '3bdLrIgRSwO6q7x3cBDNkj',
         name: 'favorite artists',
         primary_color: null,
@@ -270,3 +223,5 @@ export const dataList = [
         uri: 'spotify:playlist:37i9dQZF1DX44t7uCdkV1A',
     },
 ];
+
+export default dataList;
