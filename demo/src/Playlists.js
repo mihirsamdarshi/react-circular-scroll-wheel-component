@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Card, CardActionArea, CardContent, Typography, } from '@material-ui/core';
+import { Card, CardContent, Typography, } from '@material-ui/core';
 import '../stylesheets/Playlists.scss';
 
 const PlaylistBox = (props) => {
@@ -18,13 +18,11 @@ const PlaylistBox = (props) => {
 
     return (
         <Card className="card playlist" ref={scrollElement}>
-            <CardActionArea>
-                <CardContent style={props.selected ? highlighted : null} className="details">
-                    <Typography gutterBottom variant="h5" component="h2">
-                        {props.name}
-                    </Typography>
-                </CardContent>
-            </CardActionArea>
+            <CardContent style={props.selected ? highlighted : null} className="details">
+                <Typography gutterBottom variant="h5" component="h2">
+                    {props.name}
+                </Typography>
+            </CardContent>
         </Card>
     );
 };
