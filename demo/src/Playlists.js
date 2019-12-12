@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import { Card, CardContent, Typography, } from '@material-ui/core';
-import '../stylesheets/Playlists.scss';
+import React, {useEffect, useRef} from 'react';
+import {Card, CardContent, Typography,} from '@material-ui/core';
+import './Playlists.scss';
 
 const PlaylistBox = (props) => {
     const scrollElement = useRef(null);

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Paper } from '@material-ui/core';
+import React, {useEffect, useState} from 'react';
+import {Paper} from '@material-ui/core';
 
 import Playlists from "./Playlists";
-import ScrollWheel from "../component/ScrollWheel";
+import ScrollWheel from "./component/ScrollWheel";
 import dataList from './data';
-import './App.css';
+import './App.scss';
 
 const App = () => {
     const [playlistIds, setPlaylistIds] = useState([]);
@@ -29,10 +29,16 @@ const App = () => {
 
     return (
         <div className="App">
-            <Paper className="paper playlistComponent" style={blackOverride}>
-                <Playlists playlists={dataList} selected={selectPlaylist()} />
-            </Paper>
-            <ScrollWheel onSlideMove={setAngle} snapAngle={angleIncrement} />
+            <Grid container className="gridContainer">
+                <Grid item xs={6}>
+                    <Paper className="paper playlistComponent" style={blackOverride}>
+                        <Playlists playlists={dataList} selected={selectPlaylist()}/>
+                    </Paper>
+                </Grid>
+                <Grid item xs={6}>
+                    <ScrollWheel onSlideMove={setAngle} snapAngle={angleIncrement}/>
+                </Grid>
+            </Grid>
         </div>
     );
 };
