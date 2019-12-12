@@ -17,7 +17,7 @@ const dataList = [
     },
     {
         id: '6G1wrNVfTlxYEW5gdzCsCg',
-        name: 'shit i really like',
+        name: 'stuff i really like',
     },
     {
         id: '3qcApm9ubHd20znliLR2B8',
