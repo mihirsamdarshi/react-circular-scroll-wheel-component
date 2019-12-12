@@ -1,4 +1,4 @@
-export const list = [
+export const dataList = [
     {
         collaborative: false,
         external_urls: {
