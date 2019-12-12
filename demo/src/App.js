@@ -1,14 +1,18 @@
 import React from 'react';
+import { Paper } from '@material-ui/core';
+
+import Playlists from "./Playlists";
+import ScrollWheel from "../../component/src/ScrollWheel";
+import dataList from './data';
 import './App.css';
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-            </header>
+            <Paper className="paper playlistComponent" style={blackOverride}>
+                <Playlists playlists={dataList} selected={selectPlaylist()} />
+            </Paper>
+            <ScrollWheel />
         </div>
     );
 }
