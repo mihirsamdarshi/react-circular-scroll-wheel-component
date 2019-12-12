@@ -3,9 +3,9 @@ import {Grid, Paper} from '@material-ui/core';
 
 import Playlists from "./Playlists";
 import ScrollWheel from "./component/ScrollWheel";
-import useWindowDimensions from "./WindowDimensions";
+import useWindowDimensions from "./scripts/WindowDimensions";
 
-import dataList from './data';
+import dataList from './scripts/data';
 import './App.scss';
 
 const App = () => {

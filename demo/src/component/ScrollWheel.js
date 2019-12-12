@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import './ScrollWheel.scss';
+import '../stylesheets/ScrollWheel.scss';
 
 const STATE_IDLE = 'idle';
 const STATE_DRAGGING = 'dragging';
